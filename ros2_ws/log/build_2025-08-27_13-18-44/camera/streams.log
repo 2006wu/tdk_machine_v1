@@ -1,0 +1,10 @@
+[0.021s] Invoking command in '/ros2_ws/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/camera -- -j12 -l12
+[0.124s] [ 14%] Built target TFsetup
+[0.128s] [ 28%] Built target coffee2
+[0.130s] [ 42%] Built target imread
+[0.130s] [ 57%] [32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o[0m
+[0.130s] [ 64%] Built target transform
+[0.132s] [ 78%] Built target orange
+[0.134s] [ 92%] Built target arm
+[7.434s] [100%] [32m[1mLinking CXX executable coffee1[0m
+[7.983s] [100%] Built target coffee1

@@ -1,0 +1,22 @@
+[  3%] Built target rospi_pre__cpp
+[ 12%] Built target rospi_pre__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_rospi_pre
+[ 22%] Built target rospi_pre__rosidl_typesupport_introspection_cpp
+[ 32%] Built target rospi_pre__rosidl_typesupport_fastrtps_c
+[ 41%] Built target rospi_pre__rosidl_typesupport_introspection_c
+[ 54%] Built target rospi_pre__rosidl_typesupport_fastrtps_cpp
+[ 64%] Built target rospi_pre__rosidl_typesupport_cpp
+[ 70%] Built target rospi_pre__rosidl_typesupport_c
+[ 70%] Built target rospi_pre
+[ 74%] Built target rospi_pre__py
+[ 80%] Built target rospi_pre__rosidl_generator_py
+[ 87%] Built target rospi_pre__rosidl_typesupport_c__pyext
+[ 93%] Built target rospi_pre__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target rospi_pre__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing rospi_pre.egg-info/PKG-INFO
+writing dependency_links to rospi_pre.egg-info/dependency_links.txt
+writing top-level names to rospi_pre.egg-info/top_level.txt
+reading manifest file 'rospi_pre.egg-info/SOURCES.txt'
+writing manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_rospi_pre_egg

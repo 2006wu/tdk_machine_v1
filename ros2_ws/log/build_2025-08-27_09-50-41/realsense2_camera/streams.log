@@ -1,0 +1,93 @@
+[0.016s] Invoking command in '/ros2_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /ros2_ws/build/realsense2_camera -- -j12 -l12
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_node[0m
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera[0m
+[0.096s] [ 13%] Built target gtest_main
+[0.097s] [ 18%] Built target gtest
+[0.104s] [ 27%] Built target realsense2_camera_node
+[0.107s] [35m[1mConsolidate compiler generated dependencies of target gtest_template[0m
+[0.121s] [ 36%] Built target gtest_template
+[0.149s] [100%] Built target realsense2_camera
+[0.161s] Invoked command in '/ros2_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /ros2_ws/build/realsense2_camera -- -j12 -l12
+[0.169s] Invoking command in '/ros2_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /ros2_ws/build/realsense2_camera
+[0.176s] -- Install configuration: "Release"
+[0.176s] -- Up-to-date: /ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[0.176s] -- Up-to-date: /ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[0.176s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include
+[0.176s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/named_filter.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/image_publisher.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/constants.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/sensor_params.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/ros_utils.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/gl_window.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/include/profile_manager.h
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets
+[0.177s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/DefaultPreset_D455.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/DefaultPreset_D435.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/HandGesturePreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/ShortRangePreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/HighAccuracyPreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/HighDensityPreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/EdgeMapD435.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/BodyScanPreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/D415_RemoveIR.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/MedDensityPreset.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/visual_presets/DefaultPreset_D415.json
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[0.178s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[0.179s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[0.180s] -- Installing: /ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[0.180s] -- Up-to-date: /ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[0.181s] Invoked command in '/ros2_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /ros2_ws/build/realsense2_camera

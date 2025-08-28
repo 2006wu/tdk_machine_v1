@@ -1,0 +1,11 @@
+[0.018s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/rospi_pre -- -j12 -l12
+[0.077s] [  3%] Built target rospi_pre__cpp
+[0.081s] Error copying directory from "/ros2_ws/build/rospi_pre/rosidl_generator_py/rospi_pre" to "/ros2_ws/build/rospi_pre/ament_cmake_python/rospi_pre/rospi_pre".
+[0.081s] gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_rospi_pre.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_rospi_pre] Error 1
+[0.081s] [ 12%] Built target rospi_pre__rosidl_generator_c
+[0.083s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_rospi_pre.dir/all] Error 2
+[0.083s] gmake[1]: *** Waiting for unfinished jobs....
+[0.106s] [ 22%] Built target rospi_pre__rosidl_typesupport_introspection_cpp
+[0.108s] [ 32%] Built target rospi_pre__rosidl_typesupport_cpp
+[0.110s] [ 41%] Built target rospi_pre__rosidl_typesupport_fastrtps_cpp
+[0.111s] gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ac38dcb7357fdfd199f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "camera",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TFsetup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TFsetup-abae6cd750ecd017e95c.json",
+					"name" : "TFsetup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm-68b46e430a0813f8d044.json",
+					"name" : "arm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "camera_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera_uninstall-83af9d80ac9b02a4d7a6.json",
+					"name" : "camera_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "coffee1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coffee1-7057ed3c8d6a8612ec78.json",
+					"name" : "coffee1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "coffee2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coffee2-2e89ed6b0364a6770ce1.json",
+					"name" : "coffee2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imread-0c01eeb906045d6fe87e.json",
+					"name" : "imread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange-f65f7f703c9a2af0fd8c.json",
+					"name" : "orange",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "transform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-transform-dd4a01c827c8a04ab57e.json",
+					"name" : "transform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-627feb1917222df4cc53.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/ros2_ws/build/camera",
+		"source" : "/ros2_ws/src/camera"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

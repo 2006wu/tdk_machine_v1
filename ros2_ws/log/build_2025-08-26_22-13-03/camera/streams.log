@@ -1,0 +1,16 @@
+[0.021s] Invoking command in '/ros2_ws/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/camera -- -j12 -l12
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target coffee1[0m
+[0.080s] [ 57%] Built target imread
+[0.080s] [ 57%] Built target transform
+[0.080s] [ 57%] Built target arm
+[0.080s] [ 57%] Built target TFsetup
+[0.080s] [ 71%] Built target coffee2
+[0.081s] [ 85%] Built target orange
+[0.083s] [ 92%] [32m[1mLinking CXX executable coffee1[0m
+[0.660s] /usr/bin/ld: CMakeFiles/coffee1.dir/src/coffee1.cpp.o: in function `Process::image_callback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+[0.660s] coffee1.cpp:(.text._ZN7Process14image_callbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN7Process14image_callbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x13d): undefined reference to `Algorithm::main(cv::Mat&)'
+[0.736s] collect2: error: ld returned 1 exit status
+[0.738s] gmake[2]: *** [CMakeFiles/coffee1.dir/build.make:184: coffee1] Error 1
+[0.738s] gmake[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/coffee1.dir/all] Error 2
+[0.738s] gmake: *** [Makefile:146: all] Error 2
+[0.740s] Invoked command in '/ros2_ws/build/camera' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/camera -- -j12 -l12

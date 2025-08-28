@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target coffee1[0m
+[35m[1mConsolidate compiler generated dependencies of target TFsetup[0m
+[  7%] [32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o[0m
+[ 21%] Built target arm
+[ 35%] Built target coffee2
+[ 50%] Built target TFsetup
+[ 64%] Built target imread
+[ 78%] Built target orange
+[ 92%] Built target transform
+[100%] [32m[1mLinking CXX executable coffee1[0m
+/usr/bin/ld: CMakeFiles/coffee1.dir/src/coffee1.cpp.o: in function `Process::image_callback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+coffee1.cpp:(.text._ZN7Process14image_callbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN7Process14image_callbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x13d): undefined reference to `Algorithm::main(cv::Mat&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/coffee1.dir/build.make:184: coffee1] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/coffee1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

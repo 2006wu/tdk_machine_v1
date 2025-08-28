@@ -1,0 +1,234 @@
+[0.010s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /ros2_ws/src/rospi_pre -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/rospi_pre
+[0.076s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.134s] -- Detecting C compiler ABI info
+[0.195s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.201s] -- Detecting C compile features
+[0.201s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.274s] -- Detecting CXX compiler ABI info - done
+[0.280s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.280s] -- Detecting CXX compile features
+[0.280s] -- Detecting CXX compile features - done
+[0.284s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.395s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.484s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.512s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.516s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.523s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.534s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.547s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.569s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.799s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.083s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.211s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.231s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.234s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.259s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.259s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.260s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.260s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.280s] -- Found PythonExtra: .so  
+[1.353s] -- Configuring done
+[1.397s] -- Generating done
+[1.411s] -- Build files have been written to: /ros2_ws/build/rospi_pre
+[1.420s] Invoked command in '/ros2_ws/build/rospi_pre' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /ros2_ws/src/rospi_pre -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/rospi_pre
+[1.421s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/rospi_pre -- -j12 -l12
+[1.483s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.511s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.515s] [  6%] Built target ament_cmake_python_copy_rospi_pre
+[1.824s] running egg_info
+[1.824s] creating rospi_pre.egg-info
+[1.824s] writing rospi_pre.egg-info/PKG-INFO
+[1.824s] writing dependency_links to rospi_pre.egg-info/dependency_links.txt
+[1.824s] writing top-level names to rospi_pre.egg-info/top_level.txt
+[1.825s] writing manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[1.828s] reading manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[1.829s] writing manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[1.879s] [  6%] Built target ament_cmake_python_build_rospi_pre_egg
+[1.978s] [  6%] Built target rospi_pre__cpp
+[2.016s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.026s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.029s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.076s] [ 19%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_generator_c.dir/rosidl_generator_c/rospi_pre/srv/detail/chassis_manager__functions.c.o[0m
+[2.226s] [ 22%] [32m[1mLinking C shared library librospi_pre__rosidl_generator_c.so[0m
+[2.373s] [ 22%] Built target rospi_pre__rosidl_generator_c
+[2.395s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.409s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.413s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.747s] [ 35%] [32mBuilding CXX object CMakeFiles/rospi_pre__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rospi_pre/srv/chassis_manager__type_support.cpp.o[0m
+[2.769s] [ 38%] [32mBuilding CXX object CMakeFiles/rospi_pre__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rospi_pre/srv/detail/dds_fastrtps/chassis_manager__type_support.cpp.o[0m
+[2.888s] [ 41%] [32mBuilding CXX object CMakeFiles/rospi_pre__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rospi_pre/srv/detail/chassis_manager__type_support.cpp.o[0m
+[3.268s] [ 45%] [32mBuilding CXX object CMakeFiles/rospi_pre__rosidl_typesupport_c.dir/rosidl_typesupport_c/rospi_pre/srv/chassis_manager__type_support.cpp.o[0m
+[3.333s] [ 48%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rospi_pre/srv/detail/chassis_manager__type_support.c.o[0m
+[3.370s] [ 51%] [32m[1mLinking CXX shared library librospi_pre__rosidl_typesupport_c.so[0m
+[3.438s] [ 54%] [32m[1mLinking C shared library librospi_pre__rosidl_typesupport_introspection_c.so[0m
+[3.485s] [ 54%] Built target rospi_pre__rosidl_typesupport_c
+[3.522s] [ 58%] [32m[1mLinking CXX shared library librospi_pre__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.524s] [ 58%] Built target rospi_pre__rosidl_typesupport_introspection_c
+[3.528s] [ 61%] [32mBuilding CXX object CMakeFiles/rospi_pre__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rospi_pre/srv/detail/chassis_manager__type_support_c.cpp.o[0m
+[3.681s] [ 64%] [32m[1mLinking CXX shared library librospi_pre__rosidl_typesupport_cpp.so[0m
+[3.704s] [ 64%] Built target rospi_pre__rosidl_typesupport_fastrtps_cpp
+[3.790s] [ 67%] [32m[1mLinking CXX shared library librospi_pre__rosidl_typesupport_introspection_cpp.so[0m
+[3.812s] [ 67%] Built target rospi_pre__rosidl_typesupport_cpp
+[4.020s] [ 67%] Built target rospi_pre__rosidl_typesupport_introspection_cpp
+[4.256s] [ 70%] [32m[1mLinking CXX shared library librospi_pre__rosidl_typesupport_fastrtps_c.so[0m
+[4.510s] [ 70%] Built target rospi_pre__rosidl_typesupport_fastrtps_c
+[4.599s] [ 70%] Built target rospi_pre
+[4.669s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.761s] [ 74%] Built target rospi_pre__py
+[5.816s] [ 77%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_generator_py.dir/rosidl_generator_py/rospi_pre/srv/_chassis_manager_s.c.o[0m
+[6.052s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/rospi_pre/librospi_pre__rosidl_generator_py.so[0m
+[6.113s] [ 80%] Built target rospi_pre__rosidl_generator_py
+[6.155s] [ 83%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.161s] [ 87%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.164s] [ 90%] [32mBuilding C object CMakeFiles/rospi_pre__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_c.c.o[0m
+[6.303s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/rospi_pre/rospi_pre_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.323s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/rospi_pre/rospi_pre_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.330s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rospi_pre/rospi_pre_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.370s] [100%] Built target rospi_pre__rosidl_typesupport_introspection_c__pyext
+[6.383s] [100%] Built target rospi_pre__rosidl_typesupport_fastrtps_c__pyext
+[6.397s] [100%] Built target rospi_pre__rosidl_typesupport_c__pyext
+[6.415s] Invoked command in '/ros2_ws/build/rospi_pre' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/rospi_pre -- -j12 -l12
+[6.429s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/rospi_pre
+[6.440s] -- Install configuration: ""
+[6.441s] -- Installing: /ros2_ws/install/rospi_pre/share/ament_index/resource_index/rosidl_interfaces/rospi_pre
+[6.441s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.441s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg
+[6.443s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg/rosidl_generator_c__visibility_control.h
+[6.444s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.444s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.444s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__struct.h
+[6.444s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__type_support.h
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__functions.h
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__functions.c
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/chassis_manager.h
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/library_path.sh
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/library_path.dsv
+[6.445s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_generator_c.so
+[6.445s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_generator_c.so" to ""
+[6.445s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.445s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg
+[6.447s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.447s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.447s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.447s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__rosidl_typesupport_fastrtps_c.h
+[6.447s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_fastrtps_c.so
+[6.447s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_fastrtps_c.so" to ""
+[6.448s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.448s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg
+[6.448s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.448s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.448s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.448s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__type_support.hpp
+[6.448s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__traits.hpp
+[6.448s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__struct.hpp
+[6.449s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__builder.hpp
+[6.449s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/chassis_manager.hpp
+[6.449s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.449s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg
+[6.449s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.450s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.450s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.450s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/dds_fastrtps
+[6.450s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__rosidl_typesupport_fastrtps_cpp.hpp
+[6.450s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_fastrtps_cpp.so
+[6.451s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.451s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.451s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg
+[6.451s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.452s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.452s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.452s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__rosidl_typesupport_introspection_c.h
+[6.452s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__type_support.c
+[6.453s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_introspection_c.so
+[6.454s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_introspection_c.so" to ""
+[6.454s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_c.so
+[6.455s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_c.so" to ""
+[6.455s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre
+[6.455s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv
+[6.456s] -- Up-to-date: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail
+[6.456s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__type_support.cpp
+[6.456s] -- Installing: /ros2_ws/install/rospi_pre/include/rospi_pre/rospi_pre/srv/detail/chassis_manager__rosidl_typesupport_introspection_cpp.hpp
+[6.457s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_introspection_cpp.so
+[6.458s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_introspection_cpp.so" to ""
+[6.458s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_cpp.so
+[6.459s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_typesupport_cpp.so" to ""
+[6.459s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/pythonpath.sh
+[6.459s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/pythonpath.dsv
+[6.460s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre-0.0.0-py3.10.egg-info
+[6.460s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre-0.0.0-py3.10.egg-info/PKG-INFO
+[6.460s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.460s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre-0.0.0-py3.10.egg-info/top_level.txt
+[6.461s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.461s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre
+[6.461s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_introspection_c.c
+[6.461s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/__init__.py
+[6.461s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_c.c
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/_rospi_pre_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/librospi_pre__rosidl_generator_py.so
+[6.462s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv
+[6.463s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv/__init__.py
+[6.463s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv/_chassis_manager.py
+[6.463s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv/_chassis_manager_s.c
+[6.502s] Listing '/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre'...
+[6.502s] Compiling '/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/__init__.py'...
+[6.502s] Listing '/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv'...
+[6.502s] Compiling '/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv/__init__.py'...
+[6.502s] Compiling '/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/srv/_chassis_manager.py'...
+[6.507s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.507s] -- Set runtime path of "/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.508s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.508s] -- Set runtime path of "/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.508s] -- Installing: /ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.509s] -- Set runtime path of "/ros2_ws/install/rospi_pre/local/lib/python3.10/dist-packages/rospi_pre/rospi_pre_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.509s] -- Installing: /ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_generator_py.so
+[6.510s] -- Set runtime path of "/ros2_ws/install/rospi_pre/lib/librospi_pre__rosidl_generator_py.so" to ""
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/srv/ChassisManager.idl
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/srv/ChassisManager.srv
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/srv/ChassisManager_Request.msg
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/srv/ChassisManager_Response.msg
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/ament_index/resource_index/package_run_dependencies/rospi_pre
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/ament_index/resource_index/parent_prefix_path/rospi_pre
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/ament_prefix_path.sh
+[6.511s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/ament_prefix_path.dsv
+[6.512s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/path.sh
+[6.512s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/environment/path.dsv
+[6.512s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/local_setup.bash
+[6.512s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/local_setup.sh
+[6.512s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/local_setup.zsh
+[6.513s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/local_setup.dsv
+[6.513s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/package.dsv
+[6.513s] -- Installing: /ros2_ws/install/rospi_pre/share/ament_index/resource_index/packages/rospi_pre
+[6.513s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_generator_cExport.cmake
+[6.514s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_generator_cExport-noconfig.cmake
+[6.514s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_typesupport_fastrtps_cExport.cmake
+[6.514s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.514s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_generator_cppExport.cmake
+[6.515s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.515s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.515s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_introspection_cExport.cmake
+[6.516s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.516s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_cExport.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_cExport-noconfig.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_introspection_cppExport.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_cppExport.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_pre__rosidl_typesupport_cppExport-noconfig.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_generator_pyExport.cmake
+[6.517s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/export_rospi_pre__rosidl_generator_pyExport-noconfig.cmake
+[6.518s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rosidl_cmake-extras.cmake
+[6.518s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.518s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.518s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/ament_cmake_export_libraries-extras.cmake
+[6.518s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/ament_cmake_export_targets-extras.cmake
+[6.519s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.519s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.519s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_preConfig.cmake
+[6.519s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/cmake/rospi_preConfig-version.cmake
+[6.520s] -- Installing: /ros2_ws/install/rospi_pre/share/rospi_pre/package.xml
+[6.525s] Invoked command in '/ros2_ws/build/rospi_pre' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/rospi_pre

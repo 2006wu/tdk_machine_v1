@@ -1,0 +1,63 @@
+name: tdk-commu
+
+x-common-env: &common-env
+  tty: true
+  stdin_open: true
+  stop_grace_period: 1s
+
+services:
+  ros2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: wu-ros2  
+      args:
+        USER: wu-ros2
+        ROS_DISTRO: humble
+    container_name: wu-ros2
+    environment:
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      - ROS_DOMAIN_ID=23
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    stdin_open: true
+    tty: true
+    network_mode: host
+    privileged: true
+    stop_grace_period: 1s
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw      
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+      - /dev/shm:/dev/shm
+      - /dev/dri:/dev/dri
+      - ~/tdk_machine/ros2_ws:/ros2_ws/
+    working_dir: /ros2_ws
+    command: bash
+
+  realsense: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: realsense  
+      args:
+        USER: realsense
+        LIBREALSENSE_VERSION: 2.56.2
+    <<: *common-env
+    network_mode: host
+    container_name: tdk-realsense
+    volumes:
+      - /dev:/dev
+      - ~/tdk_machine/ros2_ws:/ros2_ws/
+    working_dir: /ros2_ws
+    environment:
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      - ROS_DOMAIN_ID=23
+    device_cgroup_rules:
+      - "c 81:* rmw"
+      - "c 189:* rmw"
+    command: bash
+
+    # command: /bin/bash -c "
+    #   source /opt/ros/humble/setup.bash &&
+    #   source /ros2_ws/install/setup.bash &&
+    #   ros2 launch realsense2_camera rs_launch.py"

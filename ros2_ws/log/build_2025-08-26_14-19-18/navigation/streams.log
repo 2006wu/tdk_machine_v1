@@ -1,0 +1,5 @@
+[0.028s] Invoking command in '/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/ros2_ws/install/rospi_pre:/ros2_ws/install/navigation:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/main_pkg:/ros2_ws/install/camera:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/navigation -- -j12 -l12
+[0.087s] [ 75%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[0.088s] [ 75%] Built target check_point_4
+[7.014s] [100%] [32m[1mLinking CXX executable chassis_controller[0m
+[7.337s] [100%] Built target chassis_controller

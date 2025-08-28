@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000425] (-) JobUnselected: {'identifier': 'camera'}
+[0.000502] (-) JobUnselected: {'identifier': 'navigation'}
+[0.000534] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.000552] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.000631] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.000694] (-) JobUnselected: {'identifier': 'rospi_pre'}
+[0.000786] (-) EventReactorShutdown: {}

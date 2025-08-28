@@ -1,0 +1,9 @@
+[ 14%] Built target TFsetup
+[ 28%] Built target coffee2
+[ 42%] Built target imread
+[ 57%] [32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o[0m
+[ 64%] Built target transform
+[ 78%] Built target orange
+[ 92%] Built target arm
+[100%] [32m[1mLinking CXX executable coffee1[0m
+[100%] Built target coffee1

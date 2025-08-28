@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target coffee1[0m
+[ 14%] Built target imread
+[ 28%] Built target coffee2
+[ 42%] Built target orange
+[ 64%] [32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o[0m
+[ 64%] Built target arm
+[ 78%] Built target transform
+[ 92%] Built target TFsetup
+[100%] [32m[1mLinking CXX executable coffee1[0m
+[100%] Built target coffee1

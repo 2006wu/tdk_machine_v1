@@ -1,0 +1,16 @@
+/ros2_ws/build/camera/CMakeFiles/uninstall.dir
+/ros2_ws/build/camera/CMakeFiles/camera_uninstall.dir
+/ros2_ws/build/camera/CMakeFiles/imread.dir
+/ros2_ws/build/camera/CMakeFiles/coffee1.dir
+/ros2_ws/build/camera/CMakeFiles/coffee2.dir
+/ros2_ws/build/camera/CMakeFiles/orange.dir
+/ros2_ws/build/camera/CMakeFiles/TFsetup.dir
+/ros2_ws/build/camera/CMakeFiles/transform.dir
+/ros2_ws/build/camera/CMakeFiles/arm.dir
+/ros2_ws/build/camera/CMakeFiles/test.dir
+/ros2_ws/build/camera/CMakeFiles/edit_cache.dir
+/ros2_ws/build/camera/CMakeFiles/rebuild_cache.dir
+/ros2_ws/build/camera/CMakeFiles/list_install_components.dir
+/ros2_ws/build/camera/CMakeFiles/install.dir
+/ros2_ws/build/camera/CMakeFiles/install/local.dir
+/ros2_ws/build/camera/CMakeFiles/install/strip.dir

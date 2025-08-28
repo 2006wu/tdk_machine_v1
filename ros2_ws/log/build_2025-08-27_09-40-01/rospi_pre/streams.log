@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/rospi_pre -- -j12 -l12
+[0.079s] [  3%] Built target rospi_pre__cpp
+[0.080s] [ 12%] Built target rospi_pre__rosidl_generator_c
+[0.095s] [ 12%] Built target ament_cmake_python_copy_rospi_pre
+[0.122s] [ 32%] Built target rospi_pre__rosidl_typesupport_fastrtps_cpp
+[0.122s] [ 32%] Built target rospi_pre__rosidl_typesupport_cpp
+[0.126s] [ 41%] Built target rospi_pre__rosidl_typesupport_introspection_cpp
+[0.142s] [ 51%] Built target rospi_pre__rosidl_typesupport_fastrtps_c
+[0.144s] [ 61%] Built target rospi_pre__rosidl_typesupport_c
+[0.147s] [ 70%] Built target rospi_pre__rosidl_typesupport_introspection_c
+[0.174s] [ 70%] Built target rospi_pre
+[0.199s] [ 74%] Built target rospi_pre__py
+[0.223s] [ 80%] Built target rospi_pre__rosidl_generator_py
+[0.248s] [ 87%] Built target rospi_pre__rosidl_typesupport_introspection_c__pyext
+[0.249s] [ 93%] Built target rospi_pre__rosidl_typesupport_fastrtps_c__pyext
+[0.253s] [100%] Built target rospi_pre__rosidl_typesupport_c__pyext
+[0.329s] running egg_info
+[0.329s] writing rospi_pre.egg-info/PKG-INFO
+[0.329s] writing dependency_links to rospi_pre.egg-info/dependency_links.txt
+[0.329s] writing top-level names to rospi_pre.egg-info/top_level.txt
+[0.331s] reading manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[0.331s] writing manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[0.360s] [100%] Built target ament_cmake_python_build_rospi_pre_egg

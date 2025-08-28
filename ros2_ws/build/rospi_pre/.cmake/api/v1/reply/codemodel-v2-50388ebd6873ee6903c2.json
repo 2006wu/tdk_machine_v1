@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-57437feba3ec035127cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "rospi_pre__py",
+					"jsonFile" : "directory-rospi_pre__py-4c8096ccb5d025780af9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/ros2_ws/build/rospi_pre/rospi_pre__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rospi_pre",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rospi_pre_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rospi_pre_egg-dd496109022e841d8155.json",
+					"name" : "ament_cmake_python_build_rospi_pre_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rospi_pre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rospi_pre-7f634a1731496f55c110.json",
+					"name" : "ament_cmake_python_copy_rospi_pre",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre-868ab97f7098d18c4386.json",
+					"name" : "rospi_pre",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__cpp-1743a34c9fd555ca0f35.json",
+					"name" : "rospi_pre__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rospi_pre__py::@1c33da8831eecbfd0a88",
+					"jsonFile" : "target-rospi_pre__py-852fa4c34a0d3bf656b8.json",
+					"name" : "rospi_pre__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_generator_c-50428b8b94e5d78058a7.json",
+					"name" : "rospi_pre__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_generator_py-059bdd6917c5da4e22e2.json",
+					"name" : "rospi_pre__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_c-c61546cd99dd35e1f2a0.json",
+					"name" : "rospi_pre__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_c__pyext-5a695f2a12242fe2d055.json",
+					"name" : "rospi_pre__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_cpp-135915128635f09ad8dc.json",
+					"name" : "rospi_pre__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_fastrtps_c-1516ba53f8eb56464ada.json",
+					"name" : "rospi_pre__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_fastrtps_c__pyext-09a62ec768d944f9bc6e.json",
+					"name" : "rospi_pre__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_fastrtps_cpp-fd3b54a586e600d48c33.json",
+					"name" : "rospi_pre__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_introspection_c-8e59deb6618db6f06c7b.json",
+					"name" : "rospi_pre__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_introspection_c__pyext-08ce58f72ff0c9bb97ef.json",
+					"name" : "rospi_pre__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre__rosidl_typesupport_introspection_cpp-e1c3804a3b5b0319aa1b.json",
+					"name" : "rospi_pre__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rospi_pre_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rospi_pre_uninstall-d202f56c138fc7f90456.json",
+					"name" : "rospi_pre_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-08b9ebc4d1acb62d0cde.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/ros2_ws/build/rospi_pre",
+		"source" : "/ros2_ws/src/rospi_pre"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

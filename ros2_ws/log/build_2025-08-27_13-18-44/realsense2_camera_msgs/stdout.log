@@ -1,0 +1,5 @@
+[ 11%] Built target realsense2_camera_msgs__rosidl_generator_c
+[ 12%] Built target realsense2_camera_msgs__cpp
+[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_c

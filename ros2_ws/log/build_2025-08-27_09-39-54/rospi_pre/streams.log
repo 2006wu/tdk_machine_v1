@@ -1,0 +1,34 @@
+[0.019s] Invoking command in '/ros2_ws/build/rospi_pre': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/rospi_pre -- -j12 -l12
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_generator_c[0m
+[0.110s] [  3%] Built target rospi_pre__cpp
+[0.123s] [ 12%] Built target rospi_pre__rosidl_generator_c
+[0.125s] [ 12%] Built target ament_cmake_python_copy_rospi_pre
+[0.128s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_cpp[0m
+[0.128s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_fastrtps_cpp[0m
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_introspection_cpp[0m
+[0.163s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_fastrtps_c[0m
+[0.163s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_introspection_c[0m
+[0.164s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_c[0m
+[0.164s] [ 22%] Built target rospi_pre__rosidl_typesupport_cpp
+[0.165s] [ 32%] Built target rospi_pre__rosidl_typesupport_fastrtps_cpp
+[0.166s] [ 41%] Built target rospi_pre__rosidl_typesupport_introspection_cpp
+[0.182s] [ 51%] Built target rospi_pre__rosidl_typesupport_introspection_c
+[0.185s] [ 61%] Built target rospi_pre__rosidl_typesupport_c
+[0.185s] [ 70%] Built target rospi_pre__rosidl_typesupport_fastrtps_c
+[0.212s] [ 70%] Built target rospi_pre
+[0.241s] [ 74%] Built target rospi_pre__py
+[0.255s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_generator_py[0m
+[0.271s] [ 80%] Built target rospi_pre__rosidl_generator_py
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_introspection_c__pyext[0m
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target rospi_pre__rosidl_typesupport_c__pyext[0m
+[0.300s] [100%] Built target rospi_pre__rosidl_typesupport_c__pyext
+[0.300s] [100%] Built target rospi_pre__rosidl_typesupport_fastrtps_c__pyext
+[0.300s] [100%] Built target rospi_pre__rosidl_typesupport_introspection_c__pyext
+[0.362s] running egg_info
+[0.363s] writing rospi_pre.egg-info/PKG-INFO
+[0.363s] writing dependency_links to rospi_pre.egg-info/dependency_links.txt
+[0.363s] writing top-level names to rospi_pre.egg-info/top_level.txt
+[0.364s] reading manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[0.365s] writing manifest file 'rospi_pre.egg-info/SOURCES.txt'
+[0.394s] [100%] Built target ament_cmake_python_build_rospi_pre_egg

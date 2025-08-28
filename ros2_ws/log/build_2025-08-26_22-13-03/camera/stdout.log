@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target coffee1[0m
+[ 57%] Built target imread
+[ 57%] Built target transform
+[ 57%] Built target arm
+[ 57%] Built target TFsetup
+[ 71%] Built target coffee2
+[ 85%] Built target orange
+[ 92%] [32m[1mLinking CXX executable coffee1[0m

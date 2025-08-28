@@ -1,0 +1,4 @@
+[  9%] Built target rospi_pre__cpp
+[ 12%] Built target rospi_pre__rosidl_generator_c
+[ 32%] Built target rospi_pre__rosidl_typesupport_cpp
+[ 32%] Built target rospi_pre__rosidl_typesupport_fastrtps_c

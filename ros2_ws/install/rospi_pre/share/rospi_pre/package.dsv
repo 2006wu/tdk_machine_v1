@@ -1,0 +1,11 @@
+source;share/rospi_pre/hook/cmake_prefix_path.ps1
+source;share/rospi_pre/hook/cmake_prefix_path.dsv
+source;share/rospi_pre/hook/cmake_prefix_path.sh
+source;share/rospi_pre/hook/ld_library_path_lib.ps1
+source;share/rospi_pre/hook/ld_library_path_lib.dsv
+source;share/rospi_pre/hook/ld_library_path_lib.sh
+source;share/rospi_pre/local_setup.bash
+source;share/rospi_pre/local_setup.dsv
+source;share/rospi_pre/local_setup.ps1
+source;share/rospi_pre/local_setup.sh
+source;share/rospi_pre/local_setup.zsh

@@ -1,0 +1,198 @@
+[0.000000] (-) TimerEvent: {}
+[0.001048] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.001182] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001291] (rospi_pre) JobQueued: {'identifier': 'rospi_pre', 'dependencies': OrderedDict()}
+[0.001365] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict([('rospi_pre', '/ros2_ws/install/rospi_pre')])}
+[0.001419] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/ros2_ws/install/realsense2_camera_msgs')])}
+[0.001558] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/ros2_ws/install/realsense2_camera_msgs')])}
+[0.001619] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.009107] (rospi_pre) JobStarted: {'identifier': 'rospi_pre'}
+[0.012258] (camera) JobStarted: {'identifier': 'camera'}
+[0.016134] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.016665] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.017270] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/realsense2_camera_msgs', '--', '-j12', '-l12'], 'cwd': '/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('HOSTNAME', 'yilan'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/realsense'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '23'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/realsense2_camera_msgs'), ('ROS_WS_PATH', '/home/realsense/ros2_ws'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages::/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.019711] (rospi_pre) JobProgress: {'identifier': 'rospi_pre', 'progress': 'cmake'}
+[0.020195] (rospi_pre) JobProgress: {'identifier': 'rospi_pre', 'progress': 'build'}
+[0.020987] (rospi_pre) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/rospi_pre', '--', '-j12', '-l12'], 'cwd': '/ros2_ws/build/rospi_pre', 'env': OrderedDict([('HOSTNAME', 'yilan'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/realsense'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '23'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/rospi_pre'), ('ROS_WS_PATH', '/home/realsense/ros2_ws'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages::/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023185] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.023732] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[0.023945] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/camera', '--', '-j12', '-l12'], 'cwd': '/ros2_ws/build/camera', 'env': OrderedDict([('HOSTNAME', 'yilan'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/realsense'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '23'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/camera'), ('ROS_WS_PATH', '/home/realsense/ros2_ws'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages::/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.057551] (camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.070722] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[0.070989] (realsense2_camera_msgs) StderrLine: {'line': b'Error copying directory from "/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs" to "/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs".\n'}
+[0.071895] (rospi_pre) StderrLine: {'line': b'Error copying directory from "/ros2_ws/build/rospi_pre/rosidl_generator_py/rospi_pre" to "/ros2_ws/build/rospi_pre/ament_cmake_python/rospi_pre/rospi_pre".\n'}
+[0.072166] (realsense2_camera_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs] Error 1\n'}
+[0.072279] (rospi_pre) StdoutLine: {'line': b'[  9%] Built target rospi_pre__cpp\n'}
+[0.072383] (rospi_pre) StdoutLine: {'line': b'[ 12%] Built target rospi_pre__rosidl_generator_c\n'}
+[0.072636] (realsense2_camera_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs.dir/all] Error 2\n'}
+[0.072708] (realsense2_camera_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.073273] (rospi_pre) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_rospi_pre.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_rospi_pre] Error 1\n'}
+[0.073651] (rospi_pre) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_rospi_pre.dir/all] Error 2\n'}
+[0.073768] (rospi_pre) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.076803] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[0.093667] (rospi_pre) StdoutLine: {'line': b'[ 32%] Built target rospi_pre__rosidl_typesupport_cpp\n'}
+[0.093907] (rospi_pre) StdoutLine: {'line': b'[ 32%] Built target rospi_pre__rosidl_typesupport_fastrtps_c\n'}
+[0.094018] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[0.094932] (realsense2_camera_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.095078] (rospi_pre) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.096983] (rospi_pre) CommandEnded: {'returncode': 2}
+[0.099954] (-) TimerEvent: {}
+[0.112347] (rospi_pre) JobEnded: {'identifier': 'rospi_pre', 'rc': 2}
+[0.112827] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 'SIGINT'}
+[0.161445] (camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.182311] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.184302] (camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.189285] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.196392] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.200061] (-) TimerEvent: {}
+[0.206309] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.230941] (camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.232378] (camera) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.248223] (camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.287999] (camera) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.300155] (-) TimerEvent: {}
+[0.317044] (camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.318853] (camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.339008] (camera) StdoutLine: {'line': b'-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.342526] (camera) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.400276] (-) TimerEvent: {}
+[0.407079] (camera) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.410855] (camera) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.411906] (camera) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.413210] (camera) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.436109] (camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500402] (-) TimerEvent: {}
+[0.514401] (camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.514745] (camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /ros2_ws/src/camera/include\n'}
+[0.514853] (camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.515396] (camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.516664] (camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.516718] (camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.516959] (camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.517884] (camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.555836] (camera) StdoutLine: {'line': b'-- Generating done\n'}
+[0.566370] (camera) StdoutLine: {'line': b'-- Build files have been written to: /ros2_ws/build/camera\n'}
+[0.592367] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target arm\x1b[0m\n'}
+[0.592597] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target TFsetup\x1b[0m\n'}
+[0.592666] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coffee1\x1b[0m\n'}
+[0.592728] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imread\x1b[0m\n'}
+[0.593254] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coffee2\x1b[0m\n'}
+[0.593859] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target orange\x1b[0m\n'}
+[0.593961] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target transform\x1b[0m\n'}
+[0.600642] (-) TimerEvent: {}
+[0.619414] (camera) StdoutLine: {'line': b'[ 14%] Built target TFsetup\n'}
+[0.619712] (camera) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o\x1b[0m\n'}
+[0.619832] (camera) StdoutLine: {'line': b'[ 64%] Built target imread\n'}
+[0.619925] (camera) StdoutLine: {'line': b'[ 64%] Built target arm\n'}
+[0.619993] (camera) StdoutLine: {'line': b'[ 64%] Built target orange\n'}
+[0.620062] (camera) StdoutLine: {'line': b'[ 78%] Built target coffee2\n'}
+[0.621086] (camera) StdoutLine: {'line': b'[ 92%] Built target transform\n'}
+[0.700733] (-) TimerEvent: {}
+[0.801013] (-) TimerEvent: {}
+[0.901329] (-) TimerEvent: {}
+[1.001632] (-) TimerEvent: {}
+[1.101884] (-) TimerEvent: {}
+[1.202167] (-) TimerEvent: {}
+[1.302401] (-) TimerEvent: {}
+[1.402657] (-) TimerEvent: {}
+[1.502891] (-) TimerEvent: {}
+[1.603126] (-) TimerEvent: {}
+[1.703437] (-) TimerEvent: {}
+[1.803696] (-) TimerEvent: {}
+[1.904007] (-) TimerEvent: {}
+[2.004336] (-) TimerEvent: {}
+[2.104654] (-) TimerEvent: {}
+[2.204986] (-) TimerEvent: {}
+[2.305295] (-) TimerEvent: {}
+[2.405607] (-) TimerEvent: {}
+[2.505864] (-) TimerEvent: {}
+[2.606128] (-) TimerEvent: {}
+[2.706458] (-) TimerEvent: {}
+[2.806720] (-) TimerEvent: {}
+[2.907069] (-) TimerEvent: {}
+[3.007354] (-) TimerEvent: {}
+[3.107614] (-) TimerEvent: {}
+[3.207873] (-) TimerEvent: {}
+[3.308130] (-) TimerEvent: {}
+[3.408418] (-) TimerEvent: {}
+[3.508727] (-) TimerEvent: {}
+[3.609028] (-) TimerEvent: {}
+[3.709321] (-) TimerEvent: {}
+[3.809639] (-) TimerEvent: {}
+[3.909896] (-) TimerEvent: {}
+[4.010208] (-) TimerEvent: {}
+[4.110516] (-) TimerEvent: {}
+[4.210821] (-) TimerEvent: {}
+[4.311123] (-) TimerEvent: {}
+[4.411421] (-) TimerEvent: {}
+[4.511756] (-) TimerEvent: {}
+[4.612060] (-) TimerEvent: {}
+[4.712353] (-) TimerEvent: {}
+[4.812667] (-) TimerEvent: {}
+[4.913062] (-) TimerEvent: {}
+[5.013351] (-) TimerEvent: {}
+[5.113613] (-) TimerEvent: {}
+[5.213871] (-) TimerEvent: {}
+[5.314120] (-) TimerEvent: {}
+[5.414369] (-) TimerEvent: {}
+[5.514639] (-) TimerEvent: {}
+[5.614912] (-) TimerEvent: {}
+[5.715219] (-) TimerEvent: {}
+[5.815510] (-) TimerEvent: {}
+[5.915784] (-) TimerEvent: {}
+[6.016128] (-) TimerEvent: {}
+[6.116446] (-) TimerEvent: {}
+[6.216845] (-) TimerEvent: {}
+[6.317175] (-) TimerEvent: {}
+[6.417532] (-) TimerEvent: {}
+[6.517942] (-) TimerEvent: {}
+[6.618338] (-) TimerEvent: {}
+[6.718686] (-) TimerEvent: {}
+[6.818999] (-) TimerEvent: {}
+[6.919279] (-) TimerEvent: {}
+[7.019624] (-) TimerEvent: {}
+[7.119923] (-) TimerEvent: {}
+[7.220227] (-) TimerEvent: {}
+[7.320538] (-) TimerEvent: {}
+[7.420870] (-) TimerEvent: {}
+[7.521206] (-) TimerEvent: {}
+[7.621517] (-) TimerEvent: {}
+[7.721807] (-) TimerEvent: {}
+[7.822126] (-) TimerEvent: {}
+[7.922439] (-) TimerEvent: {}
+[8.022733] (-) TimerEvent: {}
+[8.123003] (-) TimerEvent: {}
+[8.223309] (-) TimerEvent: {}
+[8.323608] (-) TimerEvent: {}
+[8.423855] (-) TimerEvent: {}
+[8.524110] (-) TimerEvent: {}
+[8.624358] (-) TimerEvent: {}
+[8.724636] (-) TimerEvent: {}
+[8.824938] (-) TimerEvent: {}
+[8.925236] (-) TimerEvent: {}
+[9.025527] (-) TimerEvent: {}
+[9.125896] (-) TimerEvent: {}
+[9.226206] (-) TimerEvent: {}
+[9.326531] (-) TimerEvent: {}
+[9.426845] (-) TimerEvent: {}
+[9.527176] (-) TimerEvent: {}
+[9.627504] (-) TimerEvent: {}
+[9.727870] (-) TimerEvent: {}
+[9.828262] (-) TimerEvent: {}
+[9.928522] (-) TimerEvent: {}
+[10.028829] (-) TimerEvent: {}
+[10.129167] (-) TimerEvent: {}
+[10.229481] (-) TimerEvent: {}
+[10.258049] (camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable coffee1\x1b[0m\n'}
+[10.329569] (-) TimerEvent: {}
+[10.429892] (-) TimerEvent: {}
+[10.530201] (-) TimerEvent: {}
+[10.630478] (-) TimerEvent: {}
+[10.730797] (-) TimerEvent: {}
+[10.831119] (-) TimerEvent: {}
+[10.904313] (camera) StdoutLine: {'line': b'[100%] Built target coffee1\n'}
+[10.914730] (camera) JobEnded: {'identifier': 'camera', 'rc': 'SIGINT'}
+[10.925319] (navigation) JobSkipped: {'identifier': 'navigation'}
+[10.925406] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[10.925528] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[10.925584] (-) EventReactorShutdown: {}

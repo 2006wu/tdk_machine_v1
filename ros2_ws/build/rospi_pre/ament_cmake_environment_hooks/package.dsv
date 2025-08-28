@@ -1,0 +1,4 @@
+source;share/rospi_pre/local_setup.bash
+source;share/rospi_pre/local_setup.dsv
+source;share/rospi_pre/local_setup.sh
+source;share/rospi_pre/local_setup.zsh

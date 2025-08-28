@@ -1,0 +1,11 @@
+[0.013s] Invoking command in '/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/realsense2_camera_msgs -- -j12 -l12
+[0.067s] [  1%] Built target realsense2_camera_msgs__cpp
+[0.070s] Error copying directory from "/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs" to "/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs".
+[0.070s] gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs] Error 1
+[0.070s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_realsense2_camera_msgs.dir/all] Error 2
+[0.070s] gmake[1]: *** Waiting for unfinished jobs....
+[0.071s] [ 12%] Built target realsense2_camera_msgs__rosidl_generator_c
+[0.098s] [ 36%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.098s] [ 38%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.098s] [ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[0.098s] gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rospi_pre/srv/ChassisManager.srv
+// generated code does not contain a copyright notice
+
+
+module rospi_pre {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct ChassisManager_Request {
+      string command;
+
+      uint8 move_type;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct ChassisManager_Response {
+      boolean valid;
+    };
+  };
+};

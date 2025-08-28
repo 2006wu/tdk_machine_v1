@@ -1,0 +1,40 @@
+[0.024s] Invoking command in '/ros2_ws/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/camera -- -j12 -l12
+[0.082s] [ 42%] Built target orange
+[0.083s] [ 28%] [32mBuilding CXX object CMakeFiles/coffee1.dir/src/coffee1.cpp.o[0m
+[0.083s] [ 42%] Built target TFsetup
+[0.083s] [ 50%] Built target imread
+[0.083s] [ 64%] Built target coffee2
+[0.085s] [ 78%] Built target arm
+[0.085s] [ 92%] Built target transform
+[9.910s] [100%] [32m[1mLinking CXX executable coffee1[0m
+[10.580s] [100%] Built target coffee1
+[10.592s] Invoked command in '/ros2_ws/build/camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/camera -- -j12 -l12
+[10.602s] Invoking command in '/ros2_ws/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/camera
+[10.608s] -- Install configuration: ""
+[10.609s] -- Up-to-date: /ros2_ws/install/camera/lib/camera/imread
+[10.609s] -- Installing: /ros2_ws/install/camera/lib/camera/coffee1
+[10.616s] -- Set runtime path of "/ros2_ws/install/camera/lib/camera/coffee1" to ""
+[10.616s] -- Up-to-date: /ros2_ws/install/camera/lib/camera/coffee2
+[10.616s] -- Up-to-date: /ros2_ws/install/camera/lib/camera/orange
+[10.617s] -- Installing: /ros2_ws/install/camera/lib/camera/TFsetup
+[10.623s] -- Set runtime path of "/ros2_ws/install/camera/lib/camera/TFsetup" to ""
+[10.624s] -- Up-to-date: /ros2_ws/install/camera/lib/camera/transform
+[10.624s] -- Up-to-date: /ros2_ws/install/camera/lib/camera/arm
+[10.624s] -- Up-to-date: /ros2_ws/install/camera/share/camera/launch
+[10.624s] -- Up-to-date: /ros2_ws/install/camera/share/camera/launch/launch.xml
+[10.624s] -- Up-to-date: /ros2_ws/install/camera/share/ament_index/resource_index/package_run_dependencies/camera
+[10.624s] -- Installing: /ros2_ws/install/camera/share/ament_index/resource_index/parent_prefix_path/camera
+[10.625s] -- Up-to-date: /ros2_ws/install/camera/share/camera/environment/ament_prefix_path.sh
+[10.625s] -- Installing: /ros2_ws/install/camera/share/camera/environment/ament_prefix_path.dsv
+[10.625s] -- Up-to-date: /ros2_ws/install/camera/share/camera/environment/path.sh
+[10.625s] -- Installing: /ros2_ws/install/camera/share/camera/environment/path.dsv
+[10.625s] -- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.bash
+[10.625s] -- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.sh
+[10.625s] -- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.zsh
+[10.625s] -- Installing: /ros2_ws/install/camera/share/camera/local_setup.dsv
+[10.625s] -- Installing: /ros2_ws/install/camera/share/camera/package.dsv
+[10.626s] -- Up-to-date: /ros2_ws/install/camera/share/ament_index/resource_index/packages/camera
+[10.626s] -- Up-to-date: /ros2_ws/install/camera/share/camera/cmake/cameraConfig.cmake
+[10.626s] -- Up-to-date: /ros2_ws/install/camera/share/camera/cmake/cameraConfig-version.cmake
+[10.626s] -- Up-to-date: /ros2_ws/install/camera/share/camera/package.xml
+[10.628s] Invoked command in '/ros2_ws/build/camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/camera

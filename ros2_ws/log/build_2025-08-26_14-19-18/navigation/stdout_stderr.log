@@ -1,0 +1,4 @@
+[ 75%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[ 75%] Built target check_point_4
+[100%] [32m[1mLinking CXX executable chassis_controller[0m
+[100%] Built target chassis_controller
