@@ -24,11 +24,14 @@ class Transform : public rclcpp::Node{
             auto tf = buf->lookupTransform(head_frame,msg->header.frame_id,msg->header.stamp,rclcpp::Duration::from_seconds(0.2));
             tf2::doTransform(*msg,output,tf);
             output.header.frame_id = head_frame;
-            pub->publish(output);
+            output.point.x *= 100;
+            output.point.y *= 100;
+            output.point.z *= 100;
             std::cout << "output x: " << output.point.x
             << " y: " << output.point.y
             << " z: " << output.point.z
             << std::endl;
+            pub->publish(output);
             tri = true;
         }
         void timer_callback(){

@@ -1,0 +1,27 @@
+[0.030s] Invoking command in '/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/ros2_ws/install/rospi_pre:/ros2_ws/install/navigation:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/camera:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/navigation -- -j12 -l12
+[0.099s] [ 50%] Built target chassis_controller
+[0.105s] [ 75%] [32mBuilding CXX object CMakeFiles/check_point_4.dir/src/check_point_4.cpp.o[0m
+[3.567s] [100%] [32m[1mLinking CXX executable check_point_4[0m
+[3.756s] [100%] Built target check_point_4
+[3.768s] Invoked command in '/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/ros2_ws/install/rospi_pre:/ros2_ws/install/navigation:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/camera:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/navigation -- -j12 -l12
+[3.769s] Invoking command in '/ros2_ws/build/navigation': CMAKE_PREFIX_PATH=/ros2_ws/install/rospi_pre:/ros2_ws/install/navigation:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/camera:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/navigation
+[3.778s] -- Install configuration: ""
+[3.778s] -- Installing: /ros2_ws/install/navigation/lib/navigation/check_point_4
+[3.779s] -- Set runtime path of "/ros2_ws/install/navigation/lib/navigation/check_point_4" to ""
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/lib/navigation/chassis_controller
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.sh
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.dsv
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/path.sh
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/path.dsv
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.bash
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.sh
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.zsh
+[3.780s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.dsv
+[3.780s] -- Installing: /ros2_ws/install/navigation/share/navigation/package.dsv
+[3.781s] -- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/packages/navigation
+[3.781s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/cmake/navigationConfig.cmake
+[3.781s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/cmake/navigationConfig-version.cmake
+[3.781s] -- Up-to-date: /ros2_ws/install/navigation/share/navigation/package.xml
+[3.783s] Invoked command in '/ros2_ws/build/navigation' returned '0': CMAKE_PREFIX_PATH=/ros2_ws/install/rospi_pre:/ros2_ws/install/navigation:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/camera:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/navigation

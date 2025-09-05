@@ -28,10 +28,13 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw      
       - $HOME/.Xauthority:/root/.Xauthority:rw
-      - /dev/shm:/dev/shm
-      - /dev/dri:/dev/dri
-      - ~/tdk_machine/ros2_ws:/ros2_ws/
+      - /dev:/dev
+      - ~/tdk_machine_v1/ros2_ws:/ros2_ws/
     working_dir: /ros2_ws
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    device_cgroup_rules:
+      - "c 166:* rmw"
     command: bash
 
   realsense: 
@@ -47,7 +50,7 @@ services:
     container_name: tdk-realsense
     volumes:
       - /dev:/dev
-      - ~/tdk_machine/ros2_ws:/ros2_ws/
+      - ~/tdk_machine_v1/ros2_ws:/ros2_ws/
     working_dir: /ros2_ws
     environment:
       - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp

@@ -20,6 +20,7 @@ try:
     import rclpy
     from rclpy.node import Node
     from geometry_msgs.msg import Twist
+    from std_msgs.msg import String
     try:
         from nav_msgs.msg import Odometry
         HAVE_ODOM = True
@@ -162,6 +163,7 @@ class Panel(QtWidgets.QWidget):
             try:
                 rclpy.init(args=None)
                 self.ros_node = RosClient()
+                self.pub_reset = self.ros_node.create_publisher(String, "/reset_cmd", 10)
                 self.spin_thread = RosSpinThread(self.ros_node)
                 self.spin_thread.start()
             except Exception as e:
@@ -198,7 +200,12 @@ class Panel(QtWidgets.QWidget):
         orig = btn.styleSheet()
         btn.setStyleSheet(orig + "\nQPushButton { background-color: #2d6cdf; color: white; }")
         QtCore.QTimer.singleShot(150, lambda: btn.setStyleSheet(orig))
-        # 之後要接發 ROS 指令可在這裡加
+        # ros_topic 發送
+        if self.ros_node:
+            msg = String()
+            msg.data = f"R{cid+1}"
+            self.pub_reset.publish(msg)
+            print(f"[UI->ROS] {msg.data}")
 
     def closeEvent(self, e):
         try:

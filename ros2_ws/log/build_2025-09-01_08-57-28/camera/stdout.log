@@ -1,0 +1,35 @@
+[ 14%] Built target TFsetup
+[ 28%] Built target arm
+[ 35%] [32mBuilding CXX object CMakeFiles/coffee2.dir/src/coffee2.cpp.o[0m
+[ 50%] Built target imread
+[ 64%] Built target transform
+[ 78%] Built target coffee1
+[ 92%] Built target orange
+[100%] [32m[1mLinking CXX executable coffee2[0m
+[100%] Built target coffee2
+-- Install configuration: ""
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/imread
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/coffee1
+-- Installing: /ros2_ws/install/camera/lib/camera/coffee2
+-- Set runtime path of "/ros2_ws/install/camera/lib/camera/coffee2" to ""
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/orange
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/TFsetup
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/transform
+-- Up-to-date: /ros2_ws/install/camera/lib/camera/arm
+-- Up-to-date: /ros2_ws/install/camera/share/camera/launch
+-- Up-to-date: /ros2_ws/install/camera/share/camera/launch/launch.xml
+-- Up-to-date: /ros2_ws/install/camera/share/ament_index/resource_index/package_run_dependencies/camera
+-- Up-to-date: /ros2_ws/install/camera/share/ament_index/resource_index/parent_prefix_path/camera
+-- Up-to-date: /ros2_ws/install/camera/share/camera/environment/ament_prefix_path.sh
+-- Up-to-date: /ros2_ws/install/camera/share/camera/environment/ament_prefix_path.dsv
+-- Up-to-date: /ros2_ws/install/camera/share/camera/environment/path.sh
+-- Up-to-date: /ros2_ws/install/camera/share/camera/environment/path.dsv
+-- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.bash
+-- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.sh
+-- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.zsh
+-- Up-to-date: /ros2_ws/install/camera/share/camera/local_setup.dsv
+-- Installing: /ros2_ws/install/camera/share/camera/package.dsv
+-- Up-to-date: /ros2_ws/install/camera/share/ament_index/resource_index/packages/camera
+-- Up-to-date: /ros2_ws/install/camera/share/camera/cmake/cameraConfig.cmake
+-- Up-to-date: /ros2_ws/install/camera/share/camera/cmake/cameraConfig-version.cmake
+-- Up-to-date: /ros2_ws/install/camera/share/camera/package.xml

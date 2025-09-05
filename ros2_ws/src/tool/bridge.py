@@ -4,12 +4,11 @@
 import rclpy, threading, re
 from rclpy.node import Node
 from geometry_msgs.msg import Twist, PointStamped
-from std_msgs.msg import Int32, Float64
+from std_msgs.msg import Int32, Float64, String
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 import serial
 
-# FLOAT_RE = re.compile(r'[-+]?\d+(?:\.\d+)?')
-# 數字樣式（整數/浮點皆可）
+# type input int / float
 _FLOAT = r'[-+]?\d+(?:\.\d+)?'
 _INT   = r'[-+]?\d+'
 
@@ -17,27 +16,13 @@ class Bridge(Node):
     def __init__(self):
         super().__init__('cmd_vel_serial_bridge')
 
-        # ---------- Parameters ----------
         self.declare_parameter('port', '/dev/ttyACM0')
         self.declare_parameter('baud', 115200)
 
-        # prefix
-        self.declare_parameter('arm_point_topic', 'point_out')  # 你的相機/演算法輸出 PointStamped 的 topic
-        self.declare_parameter('arm_prefix', 'P')              # 送給 STM 的手臂命令前綴，例如: "P x y z\n"
-        self.declare_parameter('vel_prefix', 'V')              # 送給 STM 的底盤命令前綴，例如: "V vx vy wz\n"
-        self.declare_parameter('mode_prefix', 'M') 
-                     # 送給 STM 的模式命令前綴，例如: "MA mode\n"
-
-        # different mode and three parameters
         self.declare_parameter('mode_topic', 'mode')
-        self.declare_parameter('height_topic', 'height')
-        self.declare_parameter('angle1_topic', 'angle1')
-        self.declare_parameter('angle2_topic', 'angle2')
 
         port = self.get_parameter('port').value
         baud = int(self.get_parameter('baud').value)
-
-        # self._last_mode = None   # 記住最近一次的模式
 
         # ---------- Serial ----------
         try:
@@ -49,33 +34,15 @@ class Bridge(Node):
             raise SystemExit(f"Open serial failed: {e}")
         self.get_logger().info(f'Opened {port} @ {baud}')
 
-        # ---------- ROS I/O ----------
-        # (A) 底盤速度：保留你原本的 /cmd_vel 行為
+
         self.create_subscription(Twist, '/cmd_vel', self.cb_cmd, 10)
+        self.create_subscription(PointStamped, '/point_out', self.cb_point, 10)
 
-        # (B) 手臂目標：PointStamped，只取 x/y/z，不用 header
-        self.create_subscription(
-            PointStamped,
-            self.get_parameter('arm_point_topic').value,
-            self.cb_pointstamped,
-            10
-        )
+        self.create_subscription(Int32, "vision_result", self.cb_vision_result, 10)
+        self.create_subscription(String, "/reset_cmd", self.cb_reset_cmd, 10)
 
-        self.create_subscription(
-            Int32,
-            "vision_result",
-            self.cb_vision_result,
-            10
-        )
-
-        # (C) 從 STM 回讀的速度 (若 STM 有回三個浮點數，仍轉成 Twist 發到 /stm_vel)
+        # 從 STM 回讀的速度 (若 STM 有回三個浮點數，仍轉成 Twist 發到 /stm_vel)
         self.pub_vel = self.create_publisher(Twist, '/stm_vel', 10)
-
-        # (D) two different situation topic: mode / height / angle1 / angle2
-        # self.pub_mode   = self.create_publisher(Int32, self.get_parameter('mode_topic').value, 10)
-        self.pub_height = self.create_publisher(Float64, self.get_parameter('height_topic').value, 10)
-        self.pub_a1     = self.create_publisher(Float64, self.get_parameter('angle1_topic').value, 10)
-        self.pub_a2     = self.create_publisher(Float64, self.get_parameter('angle2_topic').value, 10)
 
         # --- QoS：低延遲、只留最新一筆 ---
         qos_mode = QoSProfile(
@@ -92,8 +59,6 @@ class Bridge(Node):
 
         # --- 模式定時重發（提升頻率）---
         self.declare_parameter('mode_pub_hz', 2.0)   # 想更快就調高，例如 100.0
-        # self._last_mode = None                        # 記住最近一次的模式
-        _mode_period = 1.0 / float(self.get_parameter('mode_pub_hz').value)
 
         # ---------- Reader thread ----------
         self._rx_buf = bytearray()
@@ -103,13 +68,6 @@ class Bridge(Node):
         self._reader.start()
 
         self._last_cmd = Twist()       # 最近收到的原始指令（未轉換）
-
-        # --- 可選：固定頻率送（若你不想每次 /cmd_vel 都即時送） ---
-        # self._tx_timer = self.create_timer(0.05, self.send_last_cmd)  # 20 Hz
-        # self._last_cmd = Twist()  # 初始化
-
-        # change the frequency of sending the info
-        # self.timer = self.create_timer(0.05, self.send_last_cmd)  # 20 Hz
 
         # ---------- Filters & state for RX ACK ----------
         self._last_tx_v = (0.0, 0.0, 0.0)   # 最近一次送出的 (vx, vy, wz)
@@ -126,32 +84,21 @@ class Bridge(Node):
         self._ok_line_re = re.compile(
             rf'^OK\s+({_FLOAT})\s+({_FLOAT})\s+({_FLOAT})\s*$'
         )
-        self._pa_line_re = re.compile(
-            rf'^PA\s+({_FLOAT})\s+({_FLOAT})\s+({_FLOAT})\s*$'
-        )
 
-        self._kv_height_re = re.compile(rf'^\s*height[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-        self._kv_angle1_re = re.compile(rf'^\s*angle1[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-        self._kv_angle2_re = re.compile(rf'^\s*angle2[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-
-        # === 兩種情境的解析規則 ===
-        # 1) MODE：只要是「單一整數」，或 "mode 1" / "MODE:2" 之類
-        # 單一整數先不採用
-        self._mode_only_int_re = re.compile(r'^\s*([123])\s*$')
+        # "mode 1" / "MODE:2"
         self._mode_keyval_re = re.compile(rf'^\s*mode[:\s]+({_INT})\s*$', re.IGNORECASE)
 
-        # 2) 三參數：height / angle1 / angle2 —— 接受空格或冒號分隔
-        self._kv_height_re = re.compile(rf'^\s*height[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-        self._kv_angle1_re = re.compile(rf'^\s*angle1[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-        self._kv_angle2_re = re.compile(rf'^\s*angle2[:\s]+({_FLOAT})\s*$', re.IGNORECASE)
-
-        # # 連續一致性：連兩筆 ACK 近似才發佈（進一步抗雜訊）
+        # 連續一致性：連兩筆 ACK 近似才發佈（進一步抗雜訊）
         self._ack_prev = None
 
-        # --- 初始化 mode publisher 狀態 ---
+        # initial the situation of mode
         self._current_mode = 0
-        self.pub_mode.publish(Int32(data=0))   # 程式啟動就先發 0
+        self.pub_mode.publish(Int32(data=0))   # send 0 at the beginning
         self.get_logger().info("[MODE INIT] 0")
+
+        self._mode_change = -1
+
+        self._last_point = (0.0, 0.0, 0.0)  # last PointStamped
 
         # 每秒檢查一次，如果還是 0，就再發一次 0
         self._mode_keepalive_timer = self.create_timer(1.0, self._keep_mode_alive)
@@ -168,7 +115,7 @@ class Bridge(Node):
         # return vx * scale, vy * scale, wz
         return vx, vy, wz  # 沒轉換就原樣回傳
 
-    # ===================== A) /cmd_vel → 底盤（速度） =====================
+    # /cmd_vel
     def cb_cmd(self, msg: Twist):
         vx_raw, vy_raw, wz_raw = msg.linear.x, msg.linear.y, msg.angular.z
 
@@ -182,23 +129,24 @@ class Bridge(Node):
         if (vx_raw, vy_raw, wz_raw) != self._last_tx_v:
             self.send_cmdvel(vx_raw, vy_raw, wz_raw)
 
+    def cb_point(self, msg: PointStamped):
+        self._last_point = (msg.point.x, msg.point.y, msg.point.z)
 
-    # # --- 統一的送出流程（帶一致性檢查） ---
-    # def send_last_cmd(self):
-    #     raw = self._last_cmd
-    #     vx_raw, vy_raw, wz_raw = raw.linear.x, raw.linear.y, raw.angular.z
-
-    #     # 限幅檢查
-    #     if abs(vx_raw) > 50 or abs(vy_raw) > 50 or abs(wz_raw) > 50:
-    #         self.get_logger().warn(f"[LIMIT] Reject cmd: vx={vx_raw:.3f}, vy={vy_raw:.3f}, wz={wz_raw:.3f}")
-    #         return
-
-    #     # 直接送出
-    #     self.send_cmdvel(vx_raw, vy_raw, wz_raw)
+        # ★ Mode 2：改成由 point 觸發一次性送 S
+        if self._mode_change == 2:
+            x, y, z = self._last_point
+            x_i, y_i, z_i = int(x), int(y), int(z)
+            line = f"S{x_i} {y_i} {z_i}\n"
+            try:
+                self.ser.write(line.encode('ascii'))
+                self.get_logger().info(f"[S POINT] x={x_i}, y={y_i}, z={z_i}")
+            except Exception as e:
+                self.get_logger().error(f"Serial write failed (S via point): {e}")
+            finally:
+                self._mode_change = -1  # 只送一次
 
     def send_cmdvel(self, vx: float, vy: float, wz: float):
-        prefix = self.get_parameter('vel_prefix').value  # e.g. "V"
-        line = f"{prefix} {vx:.4f} {vy:.4f} {wz:.4f}\n"
+        line = f"V {vx:.4f} {vy:.4f} {wz:.4f}\n"
         try:
             self.ser.write(line.encode('ascii'))
         except Exception as e:
@@ -207,38 +155,34 @@ class Bridge(Node):
         self.get_logger().info(f"[BASE] vx={vx:.3f}, vy={vy:.3f}, wz={wz:.3f}")
         self._last_tx_v = (vx, vy, wz)
 
-    # ===================== B) PointStamped → 手臂（位置） =====================
-    def cb_pointstamped(self, msg: PointStamped):
-        # 只取座標，不用 header 的時間與 frame_id
-        x = float(msg.point.x)
-        y = float(msg.point.y)
-        z = float(msg.point.z)
-        self.send_arm_target(x, y, z)
-
-
     def cb_vision_result(self, msg: Int32):
         val = msg.data
-        prefix = self.get_parameter('mode_prefix').value  # e.g. "MA"
-        line = f"{prefix}{val}\n"
-        try:
-            self.ser.write(line.encode('ascii'))
-            self.get_logger().info(f"[VISION->STM] {line.strip()}")
-        except Exception as e:
-            self.get_logger().error(f"Serial write failed (vision): {e}")
 
-        
-    def send_arm_target(self, x: float, y: float, z: float):
-        prefix = self.get_parameter('arm_prefix').value  # e.g. "P"
-        # 建議用不同前綴與底盤速度區分，避免 STM 解析混淆
-        line = f"{prefix} {x:.4f} {y:.4f} {z:.4f}\n"
-        try:
-            self.ser.write(line.encode('ascii'))
-        except Exception as e:
-            self.get_logger().error(f"Serial write failed: {e}")
+        if self._mode_change == 1:
+            # mode = 1, M1 ~ M8
+            line = f"M{val}\n"
+            try:
+                self.ser.write(line.encode('ascii'))
+                self.get_logger().info(f"[VISION->STM] {line.strip()}")
+            except Exception as e:
+                self.get_logger().error(f"Serial write failed (vision): {e}")
+            finally:
+                self._mode_change = -1
+        elif self._mode_change == 2:
+            # 交給 cb_point() 觸發送 S，這裡不動
             return
-        self.get_logger().info(f"[ARM] x={x:.3f}, y={y:.3f}, z={z:.3f}")
+        else:
+            return
 
-    # ===================== C) 背景讀取 STM 回傳 =====================
+    def cb_reset_cmd(self, msg: String):
+        line = msg.data.strip() + "\n"
+        try:
+            self.ser.write(line.encode("ascii"))
+            self.get_logger().info(f"[RESET->STM] {line.strip()}")
+        except Exception as e:
+            self.get_logger().error(f"Serial write failed (reset): {e}")
+
+    # 背景讀取 STM 回傳
     def _read_loop(self):
         try:
             time.sleep(0.1)
@@ -267,22 +211,14 @@ class Bridge(Node):
                 pass
 
     def _handle_line(self, s: str):
-        """
-        解析 STM 回傳：
-        1) "OK vx vy wz"  → /stm_vel
-        2) "PA x y z"     → log
-        3) "MODE N"       → /mode = N，再馬上 /mode = 0
-        """
+
         s = s.strip()
         if not s:
             return
-        
-        # Debug print
-        # self.get_logger().info(f"[RAW RX] {s}")
 
         s_norm = s.replace(',', ' ')
 
-        # ---- 1) Strict velocity ACK: "OK vx vy wz" --------
+        # ---- Strict velocity ACK: "OK vx vy wz" --------
         m = self._ok_line_re.match(s_norm)
         if m:
             try:
@@ -310,22 +246,14 @@ class Bridge(Node):
                     return
             self._ack_prev = (vx, vy, wz)
 
-            # 發佈到 /stm_vel
+            # send to /stm_vel
             t = Twist(); t.linear.x = vx; t.linear.y = vy; t.angular.z = wz
             self.pub_vel.publish(t)
             self.get_logger().info_throttle(self.get_clock(), 0.5,
                 f"STM ACK vel -> vx={vx:.3f}, vy={vy:.3f}, wz={wz:.3f}")
             return
 
-        # ---- 2) Optional arm ACK: "PA x y z" --------
-        m2 = self._pa_line_re.match(s_norm)
-        if m2:
-            ax = float(m2.group(1)); ay = float(m2.group(2)); az = float(m2.group(3))
-            self.get_logger().info_throttle(self.get_clock(), 0.5,
-                f"STM ACK arm -> x={ax:.3f}, y={ay:.3f}, z={az:.3f}")
-            return
-
-        # ---- 3a) "MODE N" --------
+        # ---- "MODE N" --------
         m_mode = self._mode_keyval_re.match(s_norm)
         if m_mode:
             try:
@@ -339,26 +267,11 @@ class Bridge(Node):
                     self.get_logger().info(f"[MODE] {val}")
                     self.pub_mode.publish(Int32(data=0))
                     self._current_mode = 0
+                    self._mode_change = val
+                    self.get_logger().info(f"[MODE CHANGE] {val}")
                 else:
                     pass
                 return
-
-        # ---- 3b) "N" (單純整數) --------
-        m_mode_int = self._mode_only_int_re.match(s_norm)
-        if m_mode_int:
-            try:
-                val = int(m_mode_int.group(1))
-            except ValueError:
-                return
-
-            if val in (1, 2, 3):
-                if self._current_mode != val:
-                    self.pub_mode.publish(Int32(data=val))
-                    self.get_logger().info(f"[MODE] {val}")
-                    self.pub_mode.publish(Int32(data=0))
-                self._current_mode = 0
-            return
-
 
     # ===================== Shutdown =====================
     def destroy_node(self):

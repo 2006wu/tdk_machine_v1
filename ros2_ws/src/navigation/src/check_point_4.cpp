@@ -13,7 +13,7 @@ struct PathCommand {
 class CurvedPathPublisher : public rclcpp::Node {
 public:
     CurvedPathPublisher() : Node("curved_path_publisher") {
-        pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+        pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel_mission_4", 10);
 
         path_ = readPath("src/navigation/waypoints/center_path.csv");
         if (path_.empty()) {
