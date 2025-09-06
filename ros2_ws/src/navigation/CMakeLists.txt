@@ -15,6 +15,7 @@ find_package(rospi_pre REQUIRED)
 # === [ Executable ] ===
 add_executable(check_point_4 src/check_point_4.cpp)
 add_executable(chassis_controller src/chassis_controller.cpp)
+add_executable(curved_path_tracker src/curved_path_tracker.cpp)
 
 ament_target_dependencies(check_point_4
   rclcpp
@@ -31,9 +32,17 @@ ament_target_dependencies(chassis_controller
   rospi_pre
 )
 
+ament_target_dependencies(curved_path_tracker
+  rclcpp
+  nav_msgs
+  geometry_msgs
+  std_msgs
+)
+
 install(TARGETS
   check_point_4
   chassis_controller
+  curved_path_tracker 
   DESTINATION lib/${PROJECT_NAME}
 )
 

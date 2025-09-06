@@ -223,6 +223,19 @@ chassis_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chassis_controller.dir/build.make CMakeFiles/chassis_controller.dir/build
 .PHONY : chassis_controller/fast
 
+#=============================================================================
+# Target rules for targets named curved_path_tracker
+
+# Build rule for target.
+curved_path_tracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 curved_path_tracker
+.PHONY : curved_path_tracker
+
+# fast build rule for target.
+curved_path_tracker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/build
+.PHONY : curved_path_tracker/fast
+
 src/chassis_controller.o: src/chassis_controller.cpp.o
 .PHONY : src/chassis_controller.o
 
@@ -271,6 +284,30 @@ src/check_point_4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check_point_4.dir/build.make CMakeFiles/check_point_4.dir/src/check_point_4.cpp.s
 .PHONY : src/check_point_4.cpp.s
 
+src/curved_path_tracker.o: src/curved_path_tracker.cpp.o
+.PHONY : src/curved_path_tracker.o
+
+# target to build an object file
+src/curved_path_tracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/src/curved_path_tracker.cpp.o
+.PHONY : src/curved_path_tracker.cpp.o
+
+src/curved_path_tracker.i: src/curved_path_tracker.cpp.i
+.PHONY : src/curved_path_tracker.i
+
+# target to preprocess a source file
+src/curved_path_tracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/src/curved_path_tracker.cpp.i
+.PHONY : src/curved_path_tracker.cpp.i
+
+src/curved_path_tracker.s: src/curved_path_tracker.cpp.s
+.PHONY : src/curved_path_tracker.s
+
+# target to generate assembly for a file
+src/curved_path_tracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/src/curved_path_tracker.cpp.s
+.PHONY : src/curved_path_tracker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +325,16 @@ help:
 	@echo "... uninstall"
 	@echo "... chassis_controller"
 	@echo "... check_point_4"
+	@echo "... curved_path_tracker"
 	@echo "... src/chassis_controller.o"
 	@echo "... src/chassis_controller.i"
 	@echo "... src/chassis_controller.s"
 	@echo "... src/check_point_4.o"
 	@echo "... src/check_point_4.i"
 	@echo "... src/check_point_4.s"
+	@echo "... src/curved_path_tracker.o"
+	@echo "... src/curved_path_tracker.i"
+	@echo "... src/curved_path_tracker.s"
 .PHONY : help
 
 

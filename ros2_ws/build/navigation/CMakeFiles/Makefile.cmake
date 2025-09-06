@@ -717,4 +717,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/navigation_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/check_point_4.dir/DependInfo.cmake"
   "CMakeFiles/chassis_controller.dir/DependInfo.cmake"
+  "CMakeFiles/curved_path_tracker.dir/DependInfo.cmake"
   )

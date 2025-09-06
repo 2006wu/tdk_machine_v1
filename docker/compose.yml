@@ -33,6 +33,7 @@ services:
     working_dir: /ros2_ws
     devices:
       - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/ttyACM1:/dev/ttyACM1
     device_cgroup_rules:
       - "c 166:* rmw"
     command: bash

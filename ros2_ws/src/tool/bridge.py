@@ -2,6 +2,7 @@
 
 #!/usr/bin/env python3
 import rclpy, threading, re
+import time
 from rclpy.node import Node
 from geometry_msgs.msg import Twist, PointStamped
 from std_msgs.msg import Int32, Float64, String
@@ -14,7 +15,7 @@ _INT   = r'[-+]?\d+'
 
 class Bridge(Node):
     def __init__(self):
-        super().__init__('cmd_vel_serial_bridge')
+        super().__init__('Bridge')
 
         self.declare_parameter('port', '/dev/ttyACM0')
         self.declare_parameter('baud', 115200)
@@ -136,6 +137,9 @@ class Bridge(Node):
         if self._mode_change == 2:
             x, y, z = self._last_point
             x_i, y_i, z_i = int(x), int(y), int(z)
+            x_i = 4
+            y_i = 3
+            z_i = 3
             line = f"S{x_i} {y_i} {z_i}\n"
             try:
                 self.ser.write(line.encode('ascii'))

@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /ros2_ws/build/navigation
 # The main recursive "all" target.
 all: CMakeFiles/check_point_4.dir/all
 all: CMakeFiles/chassis_controller.dir/all
+all: CMakeFiles/curved_path_tracker.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/navigation_uninstall.dir/clean
 clean: CMakeFiles/check_point_4.dir/clean
 clean: CMakeFiles/chassis_controller.dir/clean
+clean: CMakeFiles/curved_path_tracker.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -181,6 +183,32 @@ chassis_controller: CMakeFiles/chassis_controller.dir/rule
 CMakeFiles/chassis_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chassis_controller.dir/build.make CMakeFiles/chassis_controller.dir/clean
 .PHONY : CMakeFiles/chassis_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/curved_path_tracker.dir
+
+# All Build rule for target.
+CMakeFiles/curved_path_tracker.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/ros2_ws/build/navigation/CMakeFiles --progress-num=5,6 "Built target curved_path_tracker"
+.PHONY : CMakeFiles/curved_path_tracker.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/curved_path_tracker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /ros2_ws/build/navigation/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/curved_path_tracker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /ros2_ws/build/navigation/CMakeFiles 0
+.PHONY : CMakeFiles/curved_path_tracker.dir/rule
+
+# Convenience name for target.
+curved_path_tracker: CMakeFiles/curved_path_tracker.dir/rule
+.PHONY : curved_path_tracker
+
+# clean rule for target.
+CMakeFiles/curved_path_tracker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curved_path_tracker.dir/build.make CMakeFiles/curved_path_tracker.dir/clean
+.PHONY : CMakeFiles/curved_path_tracker.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

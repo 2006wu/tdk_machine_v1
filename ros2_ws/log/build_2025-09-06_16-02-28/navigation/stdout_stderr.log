@@ -1,0 +1,22 @@
+[ 50%] Built target check_point_4
+[ 66%] Built target chassis_controller
+[100%] Built target curved_path_tracker
+-- Install configuration: ""
+-- Up-to-date: /ros2_ws/install/navigation/lib/navigation/check_point_4
+-- Up-to-date: /ros2_ws/install/navigation/lib/navigation/chassis_controller
+-- Up-to-date: /ros2_ws/install/navigation/lib/navigation/curved_path_tracker
+-- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
+-- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.sh
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.dsv
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/path.sh
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/environment/path.dsv
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.bash
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.sh
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.zsh
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/local_setup.dsv
+-- Installing: /ros2_ws/install/navigation/share/navigation/package.dsv
+-- Up-to-date: /ros2_ws/install/navigation/share/ament_index/resource_index/packages/navigation
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/cmake/navigationConfig.cmake
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/cmake/navigationConfig-version.cmake
+-- Up-to-date: /ros2_ws/install/navigation/share/navigation/package.xml

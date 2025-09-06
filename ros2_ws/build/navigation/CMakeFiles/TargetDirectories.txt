@@ -2,6 +2,7 @@
 /ros2_ws/build/navigation/CMakeFiles/navigation_uninstall.dir
 /ros2_ws/build/navigation/CMakeFiles/check_point_4.dir
 /ros2_ws/build/navigation/CMakeFiles/chassis_controller.dir
+/ros2_ws/build/navigation/CMakeFiles/curved_path_tracker.dir
 /ros2_ws/build/navigation/CMakeFiles/test.dir
 /ros2_ws/build/navigation/CMakeFiles/edit_cache.dir
 /ros2_ws/build/navigation/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target transform[0m
+[ 14%] Built target TFsetup
+[ 28%] Built target arm
+[ 42%] Built target orange
+[ 57%] Built target coffee1
+[ 71%] Built target coffee2
+[ 78%] [32mBuilding CXX object CMakeFiles/transform.dir/src/transform.cpp.o[0m
+[ 92%] Built target imread
+[100%] [32m[1mLinking CXX executable transform[0m
+[100%] Built target transform

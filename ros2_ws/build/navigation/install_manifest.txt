@@ -1,5 +1,6 @@
 /ros2_ws/install/navigation/lib/navigation/check_point_4
 /ros2_ws/install/navigation/lib/navigation/chassis_controller
+/ros2_ws/install/navigation/lib/navigation/curved_path_tracker
 /ros2_ws/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
 /ros2_ws/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
 /ros2_ws/install/navigation/share/navigation/environment/ament_prefix_path.sh

@@ -1,0 +1,51 @@
+[0.012s] Invoking command in '/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/navigation:/ros2_ws/install/rospi_pre:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/camera:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:/ros2_ws/install/rospi_pre/lib:/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /ros2_ws/build/realsense2_camera -- -j12 -l12
+[0.036s] -- Create Release Build.
+[0.036s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.143s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.160s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.162s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.166s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.182s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.190s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.226s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.247s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.248s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.261s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.308s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.320s] -- Found realsense2_camera_msgs: 4.55.1 (/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[0.334s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.346s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.392s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[0.421s] [33mCMake Warning at CMakeLists.txt:120 (find_package):
+[0.421s]   By not providing "Findrealsense2.cmake" in CMAKE_MODULE_PATH this project
+[0.422s]   has asked CMake to find a package configuration file provided by
+[0.422s]   "realsense2", but CMake did not find one.
+[0.422s] 
+[0.422s]   Could not find a package configuration file provided by "realsense2"
+[0.422s]   (requested version 2.55.1) with any of the following names:
+[0.422s] 
+[0.422s]     realsense2Config.cmake
+[0.422s]     realsense2-config.cmake
+[0.422s] 
+[0.422s]   Add the installation prefix of "realsense2" to CMAKE_PREFIX_PATH or set
+[0.422s]   "realsense2_DIR" to a directory containing one of the above files.  If
+[0.422s]   "realsense2" provides a separate development package or SDK, be sure it has
+[0.422s]   been installed.
+[0.422s] 
+[0.422s] [0m
+[0.423s] [31mCMake Error at CMakeLists.txt:125 (message):
+[0.423s]   
+[0.423s] 
+[0.423s]   
+[0.423s] 
+[0.423s]    Intel RealSense SDK 2.0 is missing, please install it from https://github.com/IntelRealSense/librealsense/releases
+[0.423s] 
+[0.423s]   
+[0.423s] 
+[0.423s] 
+[0.423s] [0m
+[0.423s] -- Configuring incomplete, errors occurred!
+[0.423s] See also "/ros2_ws/build/realsense2_camera/CMakeFiles/CMakeOutput.log".
+[0.430s] gmake: *** [Makefile:701: cmake_check_build_system] Error 1
+[0.433s] Invoked command in '/ros2_ws/build/realsense2_camera' returned '2': CMAKE_PREFIX_PATH=/ros2_ws/install/realsense2_camera_msgs:/ros2_ws/install/navigation:/ros2_ws/install/rospi_pre:/ros2_ws/install/realsense2_description:/ros2_ws/install/realsense2_camera:/ros2_ws/install/camera:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/realsense2_camera_msgs/lib:/ros2_ws/install/rospi_pre/lib:/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /ros2_ws/build/realsense2_camera -- -j12 -l12
